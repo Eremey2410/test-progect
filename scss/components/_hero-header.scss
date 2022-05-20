@@ -1,0 +1,43 @@
+.header {
+    
+    background-color: #ffb8ca;
+
+  &-container {
+    display: flex;
+justify-content: space-between;
+
+  }
+  &-btn-menu{
+      border: none;
+      background-color: transparent;
+  }
+  &-title{
+      font-family: 'Titan One', cursive;
+      font-weight: 400;
+font-size: 26px;
+line-height: 1.15;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+  }
+   &-title span{
+       font-family: 'Titan One', cursive;
+     font-weight: 400;
+font-size: 48px;
+line-height: 0.96;
+/* or 46px */
+
+text-transform: uppercase;
+
+color: #D41443;
+   }
+}
+.hero{
+    padding-top: 8px;
+    padding-bottom: 158px;
+    background-image: url(../../images/slider-pic7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
