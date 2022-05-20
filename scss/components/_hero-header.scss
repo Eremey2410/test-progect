@@ -1,43 +1,74 @@
 .header {
-    
-    background-color: #ffb8ca;
-
+  background-color: #ffb8ca;
   &-container {
-    display: flex;
-justify-content: space-between;
-
-  }
-  &-btn-menu{
-      border: none;
-      background-color: transparent;
-  }
-  &-title{
-      font-family: 'Titan One', cursive;
-      font-weight: 400;
-font-size: 26px;
-line-height: 1.15;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-
-color: #FFFFFF;
-  }
-   &-title span{
-       font-family: 'Titan One', cursive;
-     font-weight: 400;
-font-size: 48px;
-line-height: 0.96;
-/* or 46px */
-
-text-transform: uppercase;
-
-color: #D41443;
-   }
-}
-.hero{
     padding-top: 8px;
     padding-bottom: 158px;
-    background-image: url(../../images/slider-pic7.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+  }
+
+  &-btn-menu {
+    border: none;
+    background-color: transparent;
+  }
+}
+.hero {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-title {
+    position: relative;
+    z-index: 66;
+    margin-top: 136px;
+    margin-bottom: 20px;
+    font-family: 'Titan One', cursive;
+    @include fonts(null, 26px, 1.15, 0.04em);
+    text-transform: uppercase;
+
+    color: #ffffff;
+  }
+  &-title span {
+    font-family: 'Titan One', cursive;
+    @include fonts(null, 48px, 0.96, 0.04em);
+    text-transform: uppercase;
+
+    color: $accent-color;
+  }
+  &-btn-prod {
+    position: relative;
+    z-index: 3;
+    margin-right: 8px;
+    padding: 9px 15px;
+    @include fonts(null, 8px, 1.25, 0.04em);
+    color: $accent-white-color;
+    background-color: $accent-color;
+  }
+  &-btn-made {
+    position: relative;
+    z-index: 3;
+    padding: 9px 15px;
+    @include fonts(null, 8px, 1.25, 0.04em);
+    color: $accent-color;
+    background-color: $accent-white-color;
+  }
+  &-img {
+    position: absolute;
+    top: -102px;
+    left: 97px;
+
+    z-index: 2;
+  }
+  &-circle {
+    position: absolute;
+    top: -111px;
+    z-index: 1;
+    left: 16px;
+    width: 345px;
+    height: 345px;
+    border-radius: 50%;
+    background-color: #ffa5ba;
+  }
+  &-box {
+    position: relative;
+  }
+ 
 }
