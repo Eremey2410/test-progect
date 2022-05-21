@@ -34,8 +34,6 @@
     color: $accent-color;
   }
   &-btn-prod {
-    position: relative;
-    z-index: 3;
     margin-right: 8px;
     padding: 9px 15px;
     @include fonts(null, 8px, 1.25, 0.04em);
@@ -43,8 +41,6 @@
     background-color: $accent-color;
   }
   &-btn-made {
-    position: relative;
-    z-index: 3;
     padding: 9px 15px;
     @include fonts(null, 8px, 1.25, 0.04em);
     color: $accent-color;
@@ -54,21 +50,27 @@
     position: absolute;
     top: -102px;
     left: 97px;
-
     z-index: 2;
+    animation-name: translator;
+    animation-duration: 1000ms;
   }
   &-circle {
     position: absolute;
     top: -111px;
-    z-index: 1;
     left: 16px;
+    z-index: 1;
     width: 345px;
     height: 345px;
     border-radius: 50%;
     background-color: #ffa5ba;
+    
   }
   &-box {
     position: relative;
+    z-index: 3;
   }
- 
+  &-test {
+    position: relative;
+    width: 100%;
+  }
 }

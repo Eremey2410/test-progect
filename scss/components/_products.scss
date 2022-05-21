@@ -1,0 +1,76 @@
+.products {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  &-text {
+    margin-bottom: 15px;
+
+    font-family: 'Titan One', cursive;
+    @include fonts(null, 18px, 1.17, null);
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffa5ba;
+  }
+  &-title {
+    margin-bottom: 148px;
+
+    @include fonts(null, 34px, 1.15, null);
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $accent-color;
+  }
+  &-box {
+    position: relative;
+  }
+
+  &-fon {
+    padding-top: 160px;
+    padding-bottom: 40px;
+    width: 100%;
+    height: 4100%;
+
+    background-color: #ffb8ca;
+    border-radius: 24px;
+    &-title {
+      margin-bottom: 32px;
+      @include fonts(null, 20px, 1.15, null);
+      text-align: center;
+      text-transform: uppercase;
+
+      color: $accent-white-color;
+    }
+    &-text {
+      padding-left: 40px;
+      padding-right: 40px;
+      margin-bottom: 32px;
+
+      @include fonts(700, 14px, 1.52, null);
+      text-align: center;
+
+      color: #ffffff;
+    }
+    
+    
+  }
+  &-img {
+    position: absolute;
+    top: -140px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &-fon-box {
+    display: flex;
+    justify-content: center;
+    &-circle {
+      margin-bottom: 32px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      & + & {
+        margin-left: 4px;
+      }
+    }
+  }
+}
