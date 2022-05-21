@@ -21,7 +21,7 @@
     <header class="header">
       <section class="hero">
         <div class="container header-container">
-          <div class="hero-container">
+          <div class="hero-container ">
             <a href="./index.html">
               <img
                 src="./images/svg/logo 1.svg"
@@ -30,7 +30,7 @@
                 height="50px"
               />
             </a>
-            <button type="button" class="header-btn-menu" aria-expanded="false">
+            <button type="button" class="header-btn-menu" aria-expanded="false" data-menu-button>
               <svg
                 class="header-icon"
                 width="20"
@@ -47,6 +47,7 @@
                 ></use>
               </svg>
             </button>
+            <div class="header-menu " data-menu></div>
           </div>
           <div class="hero-test">
             <div class="hero-box">
@@ -61,45 +62,272 @@
               </button>
             </div>
             <div class="hero-circle"></div>
-            <img
-              class="hero-img"
-              src="./images/png format/mobile/ice-pyramid@1x-mobile.png"
-              alt=""
-            />
+            <picture>
+              <source
+                media="(min-width:1280px)"
+                srcset="
+                  ./images/png-format/desctop/ice-pyramid@1x-desctop.png 1x,
+                  images/png-format/desctop/ice-pyramid@2x-desctop.png   2x
+                "
+              />
+              <source
+                media="(min-width:768px)"
+                srcset="
+                  ./images/png-format/tablet/ice-pyramid@1x-tablet.png 1x,
+                  images/png-format/tablet/ice-pyramid@2x-tablet.png   2x
+                "
+              />
+              <source
+                srcset="
+                  ./images/png-format/mobile/ice-pyramid@1x-mobile.png 1x,
+                  images/png-format/mobile/ice-pyramid@2x-mobile.png   2x
+                "
+              />
+
+              <img
+                class="hero-img"
+                src="./images/png-format/mobile/ice-pyramid@1x-mobile.png"
+                alt="ice-cofee"
+              />
+            </picture>
           </div>
         </div>
       </section>
     </header>
     <main>
+      <!-- ********************products*********************** -->
       <section class="products">
         <div class="container">
           <p class="products-text">100% natural</p>
           <h2 class="products-title">products</h2>
-          <div class="products-box">
-            <img
-              src="./images/png format/mobile/ice-cream@1x-mobile.png"
-              alt=""
-              class="products-img"
-            />
-            <div class="products-fon">
-              <h3 class="products-fon-title">ice cream</h3>
-              <div class="products-fon-box">
-                <div class="products-fon-box-circle"></div>
-                <div class="products-fon-box-circle"></div>
-                <div class="products-fon-box-circle"></div>
+          <ul class="products-list">
+            <li class="products-item">
+              <div class="products-fon">
+                <h3 class="products-fon-title">ice cream</h3>
+                <p class="products-fon-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et. dolore magna aliqua
+                  facilisis.
+                </p>
+                <button type="button" class="products-fon-btn">
+                  <svg class="fon-icon" width="15" height="15">
+                    <use href="./images/svg/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
               </div>
-              <p class="products-fon-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et. dolore magna aliqua
-                facilisis.
-              </p>
-              <button type="button" class="fon-arrow">
-                <svg class="fon-icon" width="15" height="15">
-                  <use href="./images/svg/sprite.svg#arrow"></use>
-                </svg>
-              </button>
-            </div>
-          </div>
+            </li>
+            <li class="products-item">
+              <div class="products-fon second">
+                <h3 class="products-fon-title">ice coffee</h3>
+                <p class="products-fon-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et. dolore magna aliqua
+                  facilisis.
+                </p>
+                <button type="button" class="products-fon-btn">
+                  <svg class="fon-icon" width="15" height="15">
+                    <use href="./images/svg/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+            <li class="products-item">
+              <div class="products-fon third">
+                <h3 class="products-fon-title">milkshakes</h3>
+                <p class="products-fon-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et. dolore magna aliqua
+                  facilisis.
+                </p>
+                <button type="button" class="products-fon-btn">
+                  <svg class="fon-icon" width="15" height="15">
+                    <use href="./images/svg/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <!-- <p class="products-text">100% natural</p>
+          <h2 class="products-title">products</h2>
+          <ul class="products-list">
+
+            <li class="products-item">
+              <div class="products-box">
+                <picture>
+                  <source
+                    media="(min-width:1280px)"
+                    srcset="
+                      ./images/png-format/desctop/ice-cream@1x-desctop.png 1x,
+                      images/png-format/desctop/ice-cream@2x-desctop.png   2x
+                    "
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images/png-format/tablet/ice-cream@1x-tablet.png 1x,
+                      images/png-format/tablet/ice-cream@2x-tablet.png   2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      ./images/png-format/mobile/ice-cream@1x-mobile.png 1x,
+                      images/png-format/mobile/ice-cream@2x-mobile.png   2x
+                    "
+                  />
+
+                  <img
+                    src="./images/png-format/mobile/ice-cream@1x-mobile.png"
+                    alt="ice-cofee"
+                    class="products-img"
+                  />
+                </picture>
+                <div class="products-fon ">
+                  <h3 class="products-fon-title">ice cream</h3>
+                  <ul class="products-fon-list">
+                    <li class="products-fon-item">
+                      <div class="products-fon-item-circle"></div>
+                    </li>
+                    <li class="products-fon-item">
+                      <div class="products-fon-item-circle"></div>
+                    </li>
+                    <li class="products-fon-item">
+                      <div class="products-fon-item-circle"></div>
+                    </li>
+                  </ul>
+
+                  <p class="products-fon-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et. dolore magna
+                    aliqua facilisis.
+                  </p>
+                  <button type="button" class="products-fon-btn">
+                    <svg class="fon-icon" width="15" height="15">
+                      <use href="./images/svg/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+
+            <li class="products-item">
+              <div class="products-box">
+                <picture>
+                  <source
+                    media="(min-width:1280px)"
+                    srcset="
+                      ./images/png-format/desctop/ice-cofee@1x-desctop.png 1x,
+                      images/png-format/desctop/ice-cofee@2x-desctop.png   2x
+                    "
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images/png-format/tablet/ice-cofee@1x-tablet.png 1x,
+                      images/png-format/tablet/ice-cofee@2x-tablet.png   2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      ./images/png-format/mobile/ice-cofee@1x-mobile.png 1x,
+                      images/png-format/mobile/ice-cofee@2x-mobile.png   2x
+                    "
+                  />
+
+                  <img
+                    src="./images/png-format/mobile/ice-cofee@1x-mobile.png"
+                    alt="ice-cofee"
+                    class="products-img"
+                  />
+                </picture>
+
+                <div class="products-fon second">
+                  <h3 class="products-fon-title">ice cream</h3>
+                  <ul class="products-fon-list">
+                    <li class="products-fon-item">
+                      <div class="products-fon-item-circle"></div>
+                    </li>
+                    <li class="products-fon-item">
+                      <div class="products-fon-item-circle"></div>
+                    </li>
+                    <li class="products-fon-item">
+                      <div class="products-fon-item-circle"></div>
+                    </li>
+                  </ul>
+
+                  <p class="products-fon-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et. dolore magna
+                    aliqua facilisis.
+                  </p>
+                  <button type="button" class="products-fon-btn">
+                    <svg class="fon-icon" width="15" height="15">
+                      <use href="./images/svg/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </li>
+
+
+            <li class="products-item">
+              <div class="products-box">
+                <picture>
+                  <source
+                    media="(min-width:1280px)"
+                    srcset="
+                      ./images/png-format/desctop/milkshakes@1x-desctop.png 1x,
+                      images/png-format/desctop/milkshakes@2x-desctop.png   2x
+                    "
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ./images/png-format/tablet/milkshakes@1x-tablet.png 1x,
+                      images/png-format/tablet/milkshakes@2x-tablet.png   2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      ./images/png-format/mobile/milkshakes@1x-mobile.png 1x,
+                      images/png-format/mobile/milkshakes@2x-mobile.png   2x
+                    "
+                  />
+
+                  <img
+                    src="./images/png-format/mobile/milkshakes@1x-mobile.png"
+                    alt="ice-cofee"
+                    class="products-img"
+                  />
+                </picture>
+                <div class="products-fon third">
+                  <h3 class="products-fon-title">ice cream</h3>
+                  <ul class="products-fon-list">
+                    <li class="products-fon-item">
+                      <div class="products-fon-item-circle"></div>
+                    </li>
+                    <li class="products-fon-item">
+                      <div class="products-fon-item-circle"></div>
+                    </li>
+                    <li class="products-fon-item">
+                      <div class="products-fon-item-circle"></div>
+                    </li>
+                  </ul>
+
+                  <p class="products-fon-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et. dolore magna
+                    aliqua facilisis.
+                  </p>
+                  <button type="button" class="products-fon-btn">
+                    <svg class="fon-icon" width="15" height="15">
+                      <use href="./images/svg/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </li>
+          </ul> -->
         </div>
       </section>
 
@@ -125,4 +353,6 @@
     </main>
     <footer class="footer"></footer>
   </body>
+  <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </html>

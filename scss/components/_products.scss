@@ -20,18 +20,28 @@
 
     color: $accent-color;
   }
+  &-list {
+    @extend %list;
+  }
+  &-item + &-item {
+    margin-top: 140px;
+  }
   &-box {
     position: relative;
   }
-
   &-fon {
     padding-top: 160px;
     padding-bottom: 40px;
     width: 100%;
-    height: 4100%;
 
     background-color: #ffb8ca;
     border-radius: 24px;
+    &.second {
+      background-color: #f0d1a5;
+    }
+    &.third {
+      background-color: #c2e297;
+    }
     &-title {
       margin-bottom: 32px;
       @include fonts(null, 20px, 1.15, null);
@@ -40,6 +50,7 @@
 
       color: $accent-white-color;
     }
+
     &-text {
       padding-left: 40px;
       padding-right: 40px;
@@ -50,27 +61,77 @@
 
       color: #ffffff;
     }
-    
-    
-  }
-  &-img {
-    position: absolute;
-    top: -140px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  &-fon-box {
-    display: flex;
-    justify-content: center;
-    &-circle {
-      margin-bottom: 32px;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background-color: #ffffff;
-      & + & {
-        margin-left: 4px;
-      }
-    }
   }
 }
+.products-fon-title::after {
+  content: '';
+  display: block;
+  margin: 32px 0;
+  height: 6px;
+  background-image: url(../../images/Group4.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+// .products-title::after {
+//   content: '';
+//   display: block;
+//   height: 280px;
+//   background-image: url(../../images/png-format/mobile/ice-cream@1x-mobile.png);
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   background-position: top 120px left 120px;
+// }
+// &-fon {
+//   padding-top: 160px;
+//   padding-bottom: 40px;
+//   width: 100%;
+
+//   background-color: #ffb8ca;
+//   border-radius: 24px;
+//   &.second {
+//     background-color: #f0d1a5;
+//   }
+//   &.third {
+//     background-color: #c2e297;
+//   }
+//   &-title {
+//     margin-bottom: 32px;
+//     @include fonts(null, 20px, 1.15, null);
+//     text-align: center;
+//     text-transform: uppercase;
+
+//     color: $accent-white-color;
+//   }
+//   &-text {
+//     padding-left: 40px;
+//     padding-right: 40px;
+//     margin-bottom: 32px;
+
+//     @include fonts(700, 14px, 1.52, null);
+//     text-align: center;
+
+//     color: #ffffff;
+//   }
+//   &-list {
+//     @extend %list;
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 32px;
+//   }
+//   &-item {
+//     width: 6px;
+//     height: 6px;
+//     border-radius: 50%;
+//     background-color: #ffffff;
+//     & + & {
+//       margin-left: 4px;
+//     }
+//   }
+// }
+// &-img {
+//   position: absolute;
+//   top: -140px;
+//   left: 50%;
+//   transform: translateX(-50%);
+// }

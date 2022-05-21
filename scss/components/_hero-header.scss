@@ -1,6 +1,8 @@
 .header {
   background-color: #ffb8ca;
   &-container {
+    position: relative;
+
     padding-top: 8px;
     padding-bottom: 158px;
   }

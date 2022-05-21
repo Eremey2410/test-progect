@@ -1,0 +1,44 @@
+button {
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+.header-btn-menu {
+  position: absolute;
+  top: 20px;
+  right: 0;
+
+  z-index: 9;
+  & .header-btn-burger {
+    display: none;
+  }
+  &.is-open .header-btn-burger {
+    display: block;
+  }
+  &.is-open .header-btn-close {
+    display: none;
+  }
+  &.is-open {
+    @include mobile-max {
+      position: fixed;
+    }
+  }
+  @include tablet {
+    display: none;
+  }
+}
+.products-fon-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.fon-icon {
+  fill: #d41443;
+}
