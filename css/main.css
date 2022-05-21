@@ -33,7 +33,7 @@ button {
 .header-btn-menu {
   position: absolute;
   top: 20px;
-  right: 0;
+  right: 20px;
   z-index: 9;
 }
 
