@@ -4,8 +4,8 @@
 
 @-webkit-keyframes translator {
   0% {
-    -webkit-transform: translateX(250px);
-            transform: translateX(250px);
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px);
   }
   100% {
     -webkit-transform: translateX(0px);
@@ -15,8 +15,8 @@
 
 @keyframes translator {
   0% {
-    -webkit-transform: translateX(250px);
-            transform: translateX(250px);
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px);
   }
   100% {
     -webkit-transform: translateX(0px);
@@ -30,35 +30,46 @@ button {
   border: none;
 }
 
-.header-btn-menu {
+.header-menu-btn {
   position: absolute;
   top: 20px;
   right: 20px;
   z-index: 9;
+  border: none;
+  background-color: transparent;
 }
 
-.header-btn-menu .header-btn-burger {
+.header-menu-btn .header-btn-burger {
   display: none;
 }
 
-.header-btn-menu.is-open .header-btn-burger {
+.header-menu-btn.is-open .header-btn-burger {
   display: block;
 }
 
-.header-btn-menu.is-open .header-btn-close {
+.header-menu-btn.is-open .header-btn-close {
   display: none;
 }
 
-@media screen and (max-width: 767px) {
-  .header-btn-menu.is-open {
-    position: fixed;
+@media screen and (min-width: 1280px) {
+  .header-menu-btn {
+    display: none;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .header-btn-menu {
-    display: none;
-  }
+.hero-btn-buy {
+  width: 160px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  border-radius: 22px;
+  background-color: #fff;
+  color: #D41443;
+}
+
+.hero-btn-icon {
+  margin-left: 12px;
 }
 
 .products-fon-btn {
@@ -102,6 +113,7 @@ h6 {
 
 .container {
   outline: 1px solid green;
+  overflow: hidden;
   width: 100%;
   padding-left: 20px;
   padding-right: 20px;
@@ -162,23 +174,9 @@ li {
   padding-bottom: 158px;
 }
 
-.header-btn-menu {
-  border: none;
-  background-color: transparent;
-}
-
-.hero-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .hero-title {
   position: relative;
-  z-index: 66;
+  z-index: 6;
   margin-top: 136px;
   margin-bottom: 20px;
   font-family: 'Titan One', cursive;
@@ -219,13 +217,13 @@ li {
 
 .hero-img {
   position: absolute;
-  top: -102px;
+  top: -96px;
   left: 97px;
   z-index: 2;
   -webkit-animation-name: translator;
           animation-name: translator;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
 }
 
 .hero-circle {
@@ -246,7 +244,6 @@ li {
 
 .hero-test {
   position: relative;
-  width: 100%;
 }
 
 .header-menu.is-open {
@@ -254,16 +251,35 @@ li {
   top: 0;
   left: 0;
   z-index: 4;
-  width: 100%;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+  width: 100%vw;
   height: 100%;
   padding: 20px;
   background-color: #D41443;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1280px) {
   .header-menu.is-open {
     display: none;
   }
+}
+
+.header-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  width: 250px;
+  height: 100%;
+  padding: 20px;
+  background-color: #D41443;
 }
 
 .products {
@@ -343,5 +359,31 @@ li {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+.products-item {
+  position: relative;
+}
+
+.products-fon::before {
+  content: '';
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../images/png-format/mobile/ice-cream@1x-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.second::before {
+  background-image: url(../../images/png-format/mobile/ice-cofee@1x-mobile.png);
+}
+
+.third::before {
+  background-image: url(../../images/png-format/mobile/milkshakes@1x-mobile.png);
 }
 /*# sourceMappingURL=main.css.map */

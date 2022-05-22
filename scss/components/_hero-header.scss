@@ -6,20 +6,11 @@
     padding-top: 8px;
     padding-bottom: 158px;
   }
-
-  &-btn-menu {
-    border: none;
-    background-color: transparent;
-  }
 }
 .hero {
-  &-container {
-    display: flex;
-    justify-content: space-between;
-  }
   &-title {
     position: relative;
-    z-index: 66;
+    z-index: 6;
     margin-top: 136px;
     margin-bottom: 20px;
     font-family: 'Titan One', cursive;
@@ -50,11 +41,11 @@
   }
   &-img {
     position: absolute;
-    top: -102px;
+    top: -96px;
     left: 97px;
     z-index: 2;
     animation-name: translator;
-    animation-duration: 1000ms;
+    animation-duration: 500ms;
   }
   &-circle {
     position: absolute;
@@ -65,7 +56,6 @@
     height: 345px;
     border-radius: 50%;
     background-color: #ffa5ba;
-    
   }
   &-box {
     position: relative;
@@ -73,6 +63,5 @@
   }
   &-test {
     position: relative;
-    width: 100%;
   }
 }
