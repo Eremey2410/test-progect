@@ -64,16 +64,7 @@
     }
   }
 }
-.products-fon-title::after {
-  content: '';
-  display: block;
-  margin: 32px 0;
-  height: 6px;
-  background-image: url(../../images/Group4.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
+
 .products-item {
   position: relative;
 }

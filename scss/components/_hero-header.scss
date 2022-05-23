@@ -8,6 +8,14 @@
   }
 }
 .hero {
+  &-wrap {
+    position: relative;
+  }
+  &-inner {
+    position: relative;
+    z-index: 3;
+  }
+  
   &-title {
     position: relative;
     z-index: 6;
@@ -57,11 +65,5 @@
     border-radius: 50%;
     background-color: #ffa5ba;
   }
-  &-box {
-    position: relative;
-    z-index: 3;
-  }
-  &-test {
-    position: relative;
-  }
+  
 }

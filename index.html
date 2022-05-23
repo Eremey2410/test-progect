@@ -15,54 +15,73 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <title>Document</title>
+    <title>IceCream</title>
   </head>
   <body>
     <header class="header">
       <section class="hero">
         <div class="container header-container">
-          <div class="hero-container">
-            <a href="./index.html">
-              <img
-                src="./images/svg/logo.svg"
-                alt="logo site"
-                width="199"
-                height="50"
-              />
-            </a>
-            <button
-              type="button"
-              class="header-menu-btn"
-              aria-expanded="false"
-              data-menu-button
-            >
-              <svg
-                class="header-icon"
-                width="20"
-                height="20"
-                aria-label="Переключатель мобильного меню"
+          <div class="header-wrap">
+            <nav class="nav">
+              <a href="./index.html">
+                <img
+                  src="./images/svg/logo.svg"
+                  alt="logo site"
+                  width="199"
+                  height="50"
+                />
+              </a>
+              <ul class="header-list">
+                <li class="header-item">
+                  <a href="" class="header-link">Home</a>
+                </li>
+                <li class="header-item">
+                  <a href="" class="header-link">About us</a>
+                </li>
+                <li class="header-item">
+                  <a href="" class="header-link">How it’s made?</a>
+                </li>
+                <li class="header-item">
+                  <a href="" class="header-link">Our products</a>
+                </li>
+                <li class="header-item">
+                  <a href="" class="header-link">Contact</a>
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="header-menu-btn"
+                aria-expanded="false"
+                data-menu-button
               >
-                <use
-                  class="header-btn-close"
-                  href="./images/svg/sprite.svg#burger"
-                ></use>
-                <use
-                  class="header-btn-burger"
-                  href="./images/svg/sprite.svg#close"
-                ></use>
-              </svg>
-            </button>
-            <button class="hero-btn-buy" type="button">
-              Buy now
-              <svg class="hero-btn-icon" width="6" height="8">
-                <use href="./images/svg/sprite.svg#vector"></use>
-              </svg>
-            </button>
+                <svg
+                  class="header-icon"
+                  width="20"
+                  height="20"
+                  aria-label="Переключатель мобильного меню"
+                >
+                  <use
+                    class="header-btn-close"
+                    href="./images/svg/sprite.svg#burger"
+                  ></use>
+                  <use
+                    class="header-btn-burger"
+                    href="./images/svg/sprite.svg#close"
+                  ></use>
+                </svg>
+              </button>
+              <button class="hero-btn-buy" type="button">
+                Buy now
+                <svg class="hero-btn-icon" width="6" height="8">
+                  <use href="./images/svg/sprite.svg#vector"></use>
+                </svg>
+              </button>
+            </nav>
 
             <div class="header-menu" data-menu></div>
           </div>
-          <div class="hero-test">
-            <div class="hero-box">
+          <div class="hero-wrap">
+            <div class="hero-inner">
               <h1 class="hero-title">
                 ice cream <br />
                 made with <br />
