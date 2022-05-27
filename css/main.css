@@ -1,5 +1,9 @@
-.products-list {
+.nav-list {
   list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
 }
 
 @-webkit-keyframes translator {
@@ -30,25 +34,18 @@ button {
   border: none;
 }
 
-.header-menu-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 9;
-  border: none;
-  background-color: transparent;
+@media screen and (max-width: 767px) {
+  .header-menu-btn {
+    position: absolute;
+    right: 20px;
+  }
 }
 
-.header-menu-btn .header-btn-burger {
-  display: none;
-}
-
-.header-menu-btn.is-open .header-btn-burger {
-  display: block;
-}
-
-.header-menu-btn.is-open .header-btn-close {
-  display: none;
+@media screen and (min-width: 768px) {
+  .header-menu-btn {
+    margin-left: auto;
+    margin-right: 32px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -57,7 +54,7 @@ button {
   }
 }
 
-.hero-btn-buy {
+.header-btn-buy {
   width: 160px;
   height: 44px;
   font-weight: 700;
@@ -68,31 +65,10 @@ button {
   color: #D41443;
 }
 
-.hero-btn-icon {
-  margin-left: 12px;
-}
-
-.products-fon-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  background-color: #ffffff;
-}
-
-.fon-icon {
-  fill: #d41443;
+@media screen and (max-width: 767px) {
+  .header-btn-buy {
+    display: none;
+  }
 }
 
 body {
@@ -165,85 +141,98 @@ li {
 }
 
 .header {
-  background-color: #ffb8ca;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
 }
 
-.header-container {
-  position: relative;
-  padding-top: 8px;
-  padding-bottom: 158px;
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: teal;
+  z-index: 2;
 }
 
-.hero-wrap {
-  position: relative;
-}
-
-.hero-inner {
+.header-logo {
   position: relative;
   z-index: 3;
 }
 
-.hero-title {
+.header-burger {
+  display: none;
+}
+
+@media screen and (max-width: 1279px) {
+  .header-burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+}
+
+.header-burger span {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  top: 9px;
+  background-color: #fff;
+}
+
+.header-burger::before, .header-burger::after {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+
+.header-burger::before {
+  top: 0;
+}
+
+.header-burger::after {
+  bottom: 0;
+}
+
+.header-nav-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  padding: 70px 0 0 0;
+}
+
+.nav {
   position: relative;
-  z-index: 6;
-  margin-top: 136px;
-  margin-bottom: 20px;
-  font-family: 'Titan One', cursive;
-  font-size: 26px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.hero-title span {
-  font-family: 'Titan One', cursive;
-  font-size: 48px;
-  line-height: 0.96;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #D41443;
-}
-
-.hero-btn-prod {
-  margin-right: 8px;
-  padding: 9px 15px;
-  font-size: 8px;
-  line-height: 1.25;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-  background-color: #D41443;
-}
-
-.hero-btn-made {
-  padding: 9px 15px;
-  font-size: 8px;
-  line-height: 1.25;
-  letter-spacing: 0.04em;
-  color: #D41443;
-  background-color: #ffffff;
-}
-
-.hero-img {
-  position: absolute;
-  top: -96px;
-  left: 97px;
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
   z-index: 2;
-  -webkit-animation-name: translator;
-          animation-name: translator;
-  -webkit-animation-duration: 500ms;
-          animation-duration: 500ms;
-}
-
-.hero-circle {
-  position: absolute;
-  top: -111px;
-  left: 16px;
-  z-index: 1;
-  width: 345px;
-  height: 345px;
-  border-radius: 50%;
-  background-color: #ffa5ba;
 }
 
 .header-menu.is-open {
@@ -280,99 +269,5 @@ li {
   height: 100%;
   padding: 20px;
   background-color: #D41443;
-}
-
-.products {
-  padding-top: 80px;
-  padding-bottom: 40px;
-}
-
-.products-text {
-  margin-bottom: 15px;
-  font-family: 'Titan One', cursive;
-  font-size: 18px;
-  line-height: 1.17;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffa5ba;
-}
-
-.products-title {
-  margin-bottom: 148px;
-  font-size: 34px;
-  line-height: 1.15;
-  text-align: center;
-  text-transform: uppercase;
-  color: #D41443;
-}
-
-.products-item + .products-item {
-  margin-top: 140px;
-}
-
-.products-box {
-  position: relative;
-}
-
-.products-fon {
-  padding-top: 160px;
-  padding-bottom: 40px;
-  width: 100%;
-  background-color: #ffb8ca;
-  border-radius: 24px;
-}
-
-.products-fon.second {
-  background-color: #f0d1a5;
-}
-
-.products-fon.third {
-  background-color: #c2e297;
-}
-
-.products-fon-title {
-  margin-bottom: 32px;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-.products-fon-text {
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-bottom: 32px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.52;
-  text-align: center;
-  color: #ffffff;
-}
-
-.products-item {
-  position: relative;
-}
-
-.products-fon::before {
-  content: '';
-  position: absolute;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  top: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-image: url(../../images/png-format/mobile/ice-cream@1x-mobile.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.second::before {
-  background-image: url(../../images/png-format/mobile/ice-cofee@1x-mobile.png);
-}
-
-.third::before {
-  background-image: url(../../images/png-format/mobile/milkshakes@1x-mobile.png);
 }
 /*# sourceMappingURL=main.css.map */

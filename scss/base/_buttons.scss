@@ -4,33 +4,37 @@ button {
   border: none;
 }
 .header-menu-btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    
+    right: 20px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+display: none;
+  }
 
-  z-index: 9;
-  border: none;
-  background-color: transparent;
-  & .header-btn-burger {
-    display: none;
-  }
-  &.is-open .header-btn-burger {
-    display: block;
-  }
-  &.is-open .header-btn-close {
-    display: none;
-  }
-  // &.is-open {
-  //   @include tablet-max {
-  //     position: fixed;
-
+  //   z-index: 9;
+  // border: none;
+  // background-color: transparent;
+  //   & .header-btn-cross {
+  //     display: none;
   //   }
-  // }
-  @include desctop {
-    display: none;
-  }
+  //   &.is-open .header-btn-cross {
+  //     display: block;
+  //   }
+  //   &.is-open .header-btn-burger {
+  //     display: none;
+  //   }
+
+  //   @include desctop {
+  //     display: none;
+  //   }
 }
-.hero-btn-buy {
+.header-btn-buy {
   width: 160px;
   height: 44px;
   @include fonts(700, 16px, 1.31, null);
@@ -38,23 +42,26 @@ button {
 
   background-color: #fff;
   color: $accent-color;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
-.hero-btn-icon {
-  margin-left: 12px;
-}
-.products-fon-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  border-radius: 50%;
-  background-color: #ffffff;
-}
-.fon-icon {
-  fill: #d41443;
-}
+// .hero-btn-icon {
+//   margin-left: 12px;
+// }
+// .products-fon-btn {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-left: auto;
+//   margin-right: auto;
+//   width: 40px;
+//   height: 40px;
+//   text-align: center;
+//   border-radius: 50%;
+//   background-color: #ffffff;
+// }
+// .fon-icon {
+//   fill: #d41443;
+// }

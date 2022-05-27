@@ -18,372 +18,62 @@
     <title>IceCream</title>
   </head>
   <body>
-    <header class="header">
-      <section class="hero">
-        <div class="container header-container">
-          <div class="header-wrap">
-            <nav class="nav">
-              <a href="./index.html">
-                <img
-                  src="./images/svg/logo.svg"
-                  alt="logo site"
-                  width="199"
-                  height="50"
-                />
-              </a>
-              <ul class="header-list">
-                <li class="header-item">
-                  <a href="" class="header-link">Home</a>
-                </li>
-                <li class="header-item">
-                  <a href="" class="header-link">About us</a>
-                </li>
-                <li class="header-item">
-                  <a href="" class="header-link">How it’s made?</a>
-                </li>
-                <li class="header-item">
-                  <a href="" class="header-link">Our products</a>
-                </li>
-                <li class="header-item">
-                  <a href="" class="header-link">Contact</a>
-                </li>
-              </ul>
-              <button
-                type="button"
-                class="header-menu-btn"
-                aria-expanded="false"
-                data-menu-button
-              >
-                <svg
-                  class="header-icon"
-                  width="20"
-                  height="20"
-                  aria-label="Переключатель мобильного меню"
-                >
-                  <use
-                    class="header-btn-close"
-                    href="./images/svg/sprite.svg#burger"
-                  ></use>
-                  <use
-                    class="header-btn-burger"
-                    href="./images/svg/sprite.svg#close"
-                  ></use>
-                </svg>
-              </button>
-              <button class="hero-btn-buy" type="button">
-                Buy now
-                <svg class="hero-btn-icon" width="6" height="8">
-                  <use href="./images/svg/sprite.svg#vector"></use>
-                </svg>
-              </button>
-            </nav>
-
-            <div class="header-menu" data-menu></div>
+    <div class="wrapper">
+       <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <a href="./index.html" class="header-logo">
+            <img
+              src="./images/svg/logo.svg"
+              alt="logo site"
+              width="199"
+              height="50"
+            />
+          </a>
+          <div class="header-burger">
+            <span></span>
           </div>
-          <div class="hero-wrap">
-            <div class="hero-inner">
-              <h1 class="hero-title">
-                ice cream <br />
-                made with <br />
-                <span>passion</span>
-              </h1>
-              <button class="hero-btn-prod" type="button">Products</button>
-              <button class="hero-btn-made" type="button">
-                How it’s made?
-              </button>
-            </div>
-            <div class="hero-circle"></div>
-            <picture>
-              <source
-                media="(min-width:1280px)"
-                srcset="
-                  ./images/png-format/desctop/ice-pyramid@1x-desctop.png 1x,
-                  images/png-format/desctop/ice-pyramid@2x-desctop.png   2x
-                "
-              />
-              <source
-                media="(min-width:768px)"
-                srcset="
-                  ./images/png-format/tablet/ice-pyramid@1x-tablet.png 1x,
-                  images/png-format/tablet/ice-pyramid@2x-tablet.png   2x
-                "
-              />
-              <source
-                srcset="
-                  ./images/png-format/mobile/ice-pyramid@1x-mobile.png 1x,
-                  images/png-format/mobile/ice-pyramid@2x-mobile.png   2x
-                "
-              />
-
-              <img
-                class="hero-img"
-                src="./images/png-format/mobile/ice-pyramid@1x-mobile.png"
-                alt="ice-cofee"
-              />
-            </picture>
+          <div class="header-nav-menu">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">About us</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">How it’s made?</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Our products</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link">Contact</a>
+              </li>
+            </ul>
           </div>
-        </div>
-      </section>
+          <button class="header-btn-buy" type="button">
+          Buy now
+          <svg class="header-btn-icon" width="6" height="8">
+            <use href="./images/svg/sprite.svg#vector"></use>
+          </svg>
+        </button>
+        </nav>
+
+        
+      </div>
     </header>
-    <main>
-      <!-- ********************products*********************** -->
-      <section class="products">
-        <div class="container">
-          <p class="products-text">100% natural</p>
-          <h2 class="products-title">products</h2>
-          <ul class="products-list">
-            <li class="products-item">
-              <div class="products-fon">
-                <h3 class="products-fon-title">ice cream</h3>
-                <p class="products-fon-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et. dolore magna aliqua
-                  facilisis.
-                </p>
-                <button type="button" class="products-fon-btn">
-                  <svg class="fon-icon" width="15" height="15">
-                    <use href="./images/svg/sprite.svg#arrow"></use>
-                  </svg>
-                </button>
-              </div>
-            </li>
-            <li class="products-item">
-              <div class="products-fon second">
-                <h3 class="products-fon-title">ice coffee</h3>
-                <p class="products-fon-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et. dolore magna aliqua
-                  facilisis.
-                </p>
-                <button type="button" class="products-fon-btn">
-                  <svg class="fon-icon" width="15" height="15">
-                    <use href="./images/svg/sprite.svg#arrow"></use>
-                  </svg>
-                </button>
-              </div>
-            </li>
-            <li class="products-item">
-              <div class="products-fon third">
-                <h3 class="products-fon-title">milkshakes</h3>
-                <p class="products-fon-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et. dolore magna aliqua
-                  facilisis.
-                </p>
-                <button type="button" class="products-fon-btn">
-                  <svg class="fon-icon" width="15" height="15">
-                    <use href="./images/svg/sprite.svg#arrow"></use>
-                  </svg>
-                </button>
-              </div>
-            </li>
-          </ul>
-          <!-- <p class="products-text">100% natural</p>
-          <h2 class="products-title">products</h2>
-          <ul class="products-list">
-
-            <li class="products-item">
-              <div class="products-box">
-                <picture>
-                  <source
-                    media="(min-width:1280px)"
-                    srcset="
-                      ./images/png-format/desctop/ice-cream@1x-desctop.png 1x,
-                      images/png-format/desctop/ice-cream@2x-desctop.png   2x
-                    "
-                  />
-                  <source
-                    media="(min-width:768px)"
-                    srcset="
-                      ./images/png-format/tablet/ice-cream@1x-tablet.png 1x,
-                      images/png-format/tablet/ice-cream@2x-tablet.png   2x
-                    "
-                  />
-                  <source
-                    srcset="
-                      ./images/png-format/mobile/ice-cream@1x-mobile.png 1x,
-                      images/png-format/mobile/ice-cream@2x-mobile.png   2x
-                    "
-                  />
-
-                  <img
-                    src="./images/png-format/mobile/ice-cream@1x-mobile.png"
-                    alt="ice-cofee"
-                    class="products-img"
-                  />
-                </picture>
-                <div class="products-fon ">
-                  <h3 class="products-fon-title">ice cream</h3>
-                  <ul class="products-fon-list">
-                    <li class="products-fon-item">
-                      <div class="products-fon-item-circle"></div>
-                    </li>
-                    <li class="products-fon-item">
-                      <div class="products-fon-item-circle"></div>
-                    </li>
-                    <li class="products-fon-item">
-                      <div class="products-fon-item-circle"></div>
-                    </li>
-                  </ul>
-
-                  <p class="products-fon-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et. dolore magna
-                    aliqua facilisis.
-                  </p>
-                  <button type="button" class="products-fon-btn">
-                    <svg class="fon-icon" width="15" height="15">
-                      <use href="./images/svg/sprite.svg#arrow"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </li>
-
-
-            <li class="products-item">
-              <div class="products-box">
-                <picture>
-                  <source
-                    media="(min-width:1280px)"
-                    srcset="
-                      ./images/png-format/desctop/ice-cofee@1x-desctop.png 1x,
-                      images/png-format/desctop/ice-cofee@2x-desctop.png   2x
-                    "
-                  />
-                  <source
-                    media="(min-width:768px)"
-                    srcset="
-                      ./images/png-format/tablet/ice-cofee@1x-tablet.png 1x,
-                      images/png-format/tablet/ice-cofee@2x-tablet.png   2x
-                    "
-                  />
-                  <source
-                    srcset="
-                      ./images/png-format/mobile/ice-cofee@1x-mobile.png 1x,
-                      images/png-format/mobile/ice-cofee@2x-mobile.png   2x
-                    "
-                  />
-
-                  <img
-                    src="./images/png-format/mobile/ice-cofee@1x-mobile.png"
-                    alt="ice-cofee"
-                    class="products-img"
-                  />
-                </picture>
-
-                <div class="products-fon second">
-                  <h3 class="products-fon-title">ice cream</h3>
-                  <ul class="products-fon-list">
-                    <li class="products-fon-item">
-                      <div class="products-fon-item-circle"></div>
-                    </li>
-                    <li class="products-fon-item">
-                      <div class="products-fon-item-circle"></div>
-                    </li>
-                    <li class="products-fon-item">
-                      <div class="products-fon-item-circle"></div>
-                    </li>
-                  </ul>
-
-                  <p class="products-fon-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et. dolore magna
-                    aliqua facilisis.
-                  </p>
-                  <button type="button" class="products-fon-btn">
-                    <svg class="fon-icon" width="15" height="15">
-                      <use href="./images/svg/sprite.svg#arrow"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </li>
-
-
-            <li class="products-item">
-              <div class="products-box">
-                <picture>
-                  <source
-                    media="(min-width:1280px)"
-                    srcset="
-                      ./images/png-format/desctop/milkshakes@1x-desctop.png 1x,
-                      images/png-format/desctop/milkshakes@2x-desctop.png   2x
-                    "
-                  />
-                  <source
-                    media="(min-width:768px)"
-                    srcset="
-                      ./images/png-format/tablet/milkshakes@1x-tablet.png 1x,
-                      images/png-format/tablet/milkshakes@2x-tablet.png   2x
-                    "
-                  />
-                  <source
-                    srcset="
-                      ./images/png-format/mobile/milkshakes@1x-mobile.png 1x,
-                      images/png-format/mobile/milkshakes@2x-mobile.png   2x
-                    "
-                  />
-
-                  <img
-                    src="./images/png-format/mobile/milkshakes@1x-mobile.png"
-                    alt="ice-cofee"
-                    class="products-img"
-                  />
-                </picture>
-                <div class="products-fon third">
-                  <h3 class="products-fon-title">ice cream</h3>
-                  <ul class="products-fon-list">
-                    <li class="products-fon-item">
-                      <div class="products-fon-item-circle"></div>
-                    </li>
-                    <li class="products-fon-item">
-                      <div class="products-fon-item-circle"></div>
-                    </li>
-                    <li class="products-fon-item">
-                      <div class="products-fon-item-circle"></div>
-                    </li>
-                  </ul>
-
-                  <p class="products-fon-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et. dolore magna
-                    aliqua facilisis.
-                  </p>
-                  <button type="button" class="products-fon-btn">
-                    <svg class="fon-icon" width="15" height="15">
-                      <use href="./images/svg/sprite.svg#arrow"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </li>
-          </ul> -->
+    <div class="content">
+      <div class="container">
+        <div class="content-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta illo facilis unde libero aspernatur error, nisi nihil inventore facere necessitatibus amet voluptates perspiciatis accusantium quidem in labore beatae porro voluptatum ex corrupti rerum a. Fugit hic earum iusto porro quo fugiat? Quis fuga hic quam sapiente beatae eum saepe at veritatis, pariatur dolorum amet blanditiis velit eveniet iusto omnis asperiores iure illum earum itaque atque? Aut temporibus commodi possimus doloribus, nam iste aperiam recusandae fugiat. Aliquid rerum delectus eos quae alias? Magnam laudantium vel molestias officiis qui, voluptatem eius earum cupiditate quia, nihil officia tempore magni, voluptate ducimus consequatur omnis ex alias! Quae eos voluptate fugit quisquam voluptates culpa sed velit voluptatibus dolore necessitatibus, adipisci molestiae non magni sunt, perferendis excepturi enim! Vero necessitatibus quia nisi ad distinctio nostrum voluptas minus officiis qui modi aliquid eos illum dignissimos suscipit nihil, assumenda natus similique ratione quibusdam, voluptate quis cum! Ipsum ex tempore sit tempora libero, nisi quia natus animi accusamus laudantium reprehenderit, ratione, architecto debitis voluptatibus obcaecati nihil modi! Dolorum tempore tenetur aliquam ad facere veritatis explicabo. Unde veniam et optio sunt voluptate explicabo, voluptatibus itaque iste dolore nisi corrupti quod suscipit libero quae rem culpa mollitia odio debitis? Porro atque consectetur iure exercitationem natus, quaerat dignissimos recusandae amet optio quos, a nihil sit dolorem! Excepturi accusantium eos laboriosam nemo? Ratione veniam recusandae ullam quae eaque amet. Dolore facere numquam neque cupiditate voluptatem, culpa nemo mollitia accusantium quidem iste itaque. Suscipit itaque error possimus pariatur, dolores quis inventore repellendus numquam distinctio voluptates vel rerum? Perferendis, numquam sapiente tempora consectetur, quod et quo, reprehenderit quasi vero temporibus ipsam animi! Recusandae iure repellat inventore velit facilis quod delectus, odit eius quisquam dignissimos voluptas tempore, dolorem necessitatibus aliquid voluptatum nostrum atque nulla pariatur dolorum quis. Enim similique soluta ipsam itaque quia! Delectus ullam, quod fuga iure, ea expedita numquam adipisci officia aliquid cumque similique nam dolorem consectetur saepe a omnis asperiores repellat tempora dicta. Nihil consectetur quo ab laborum vero ipsum modi voluptatem, unde quam veniam, eum recusandae? Itaque sit harum vero nisi quisquam debitis tenetur iste magni. Asperiores adipisci debitis et, aperiam numquam atque tenetur nihil quaerat. Ratione ducimus placeat officiis incidunt quasi quidem dicta neque doloribus accusamus minima. Quod, doloribus quae ea nostrum similique modi neque, itaque unde non deserunt accusantium asperiores recusandae quaerat officiis quam libero? Odio minima iusto est, recusandae dolorem culpa excepturi, et veritatis vero rem consectetur natus. Repellendus fuga, enim at ea in, atque consectetur soluta incidunt saepe, qui perspiciatis ab sit. Est vel ratione cupiditate autem. Et architecto harum repellat repellendus maiores incidunt veritatis accusantium inventore expedita deleniti placeat, ullam illum nobis ad quidem, cumque, unde hic sunt accusamus animi tenetur iste ducimus? Eius quia dignissimos sequi autem eaque aliquid saepe exercitationem, nesciunt maxime, officiis amet, animi accusamus! Vero amet odio ab rerum officiis eligendi ipsam maxime aliquid voluptas porro sapiente doloribus atque nobis cupiditate beatae quaerat repellendus earum odit illum ex, ea at minus officia dolore. Non exercitationem veniam deserunt ratione placeat. Quae laboriosam odit itaque.</p>
         </div>
-      </section>
-
-      <section class="about">
-        <div class="container"></div>
-      </section>
-
-      <section class="advantages">
-        <div class="container"></div>
-      </section>
-
-      <section class="gallery">
-        <div class="container"></div>
-      </section>
-
-      <section class="customer-reviews">
-        <div class="container"></div>
-      </section>
-
-      <section class="contacts">
-        <div class="container"></div>
-      </section>
-    </main>
-    <footer class="footer"></footer>
+      </div>
+    </div>
+    </div>
+   
   </body>
+  <script src="./js/menu.js"></script>
   <script src="./js/modal.js"></script>
   <script src="./js/mobile-menu.js"></script>
 </html>
